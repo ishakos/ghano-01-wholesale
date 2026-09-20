@@ -857,3 +857,37 @@ a:hover { text-decoration: underline; }
 @media (max-width: 360px) {
   .delivery-options { flex-direction: column; }
 }
+
+/* ---------- Bulk-order call banner (under the form) ---------- */
+.bulk-call {
+  display: block;
+  margin-top: 1.25rem;
+  padding: 1.1rem 1rem;
+  border-radius: 18px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+  transition: transform .15s, box-shadow .15s;
+}
+.bulk-call:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+.bulk-call__text {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 5vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.4;
+}
+.bulk-call__number {
+  display: block;
+  margin-top: .25rem;
+  font-family: var(--font-body);
+  font-size: clamp(1.5rem, 6vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--gold-light);
+}
