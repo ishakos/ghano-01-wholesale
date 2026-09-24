@@ -159,6 +159,7 @@ async function sendToSheet(data) {
    */
   const params = new URLSearchParams({
     timestamp:  new Date().toISOString(),
+    productName: "مصحف جزء عم",
     fullName:   data.fullName,
     phone:      String(data.phone).padStart(10, "0"),
     wilaya:     data.wilaya,
